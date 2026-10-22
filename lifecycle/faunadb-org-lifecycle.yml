@@ -1,0 +1,14 @@
+generated: '2026-10-22'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.faunadb.org/fauna/v4/api/fql/deprecations/
+sources:
+- https://docs.faunadb.org/fauna/v4/api/fql/deprecations/
+- https://docs.faunadb.org/fauna/current/get-started/quick-start/
+- https://docs.faunadb.org/fauna/current/get-started/quick-start/nodejs/
+- https://docs.faunadb.org/fauna/current/get-started/quick-start/python/
+versioning: {}
+deprecation:
+  notice_period: at least 6-12 months after deprecation
+status_page: null
+docs: https://docs.faunadb.org/fauna/v4/api/fql/deprecations/

@@ -1,0 +1,53 @@
+generated: '2026-10-22'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.faunadb.org/fauna/v4/api/fql/deprecations/
+sources:
+- https://docs.faunadb.org/fauna/v4/api/fql/deprecations/
+entries:
+- breaking: false
+  highlights:
+  - The definition of "identity" is changing to include third‑party authentication.
+  - We are taking this opportunity to rename the function to better describe what it does.
+  - For API version 4.0 and newer, use the CurrentIdentity function.
+  date: 2020-11-01T00:00:00Z?date=November 2020&version=4.0
+- breaking: false
+  highlights:
+  - The Contains function needed a more specific name, so the ContainsPath alias has been created.
+  - For API version 3.0 and newer, use ContainsPath, and the related ContainsField and ContainsValue functions.
+  date: 2020-08-01T00:00:00Z?date=August 2020&version=3.0
+- breaking: false
+  highlights:
+  - The legacy authentication system provided a simplistic way to establish a key that applications could use to perform queries for "unauthenticated"
+    users.
+  - Use the newer Attribute‑based access control (ABAC) system instead, as it provides much greater control and flexibility.
+  date: 2020-05-01T00:00:00Z?date=May 2020&version=2.12.0
+- breaking: false
+  highlights:
+  - The priority option, a parameter to the CreateDatabase and CreateKey functions, was intended for on‑premise operators to signal how to prioritize
+    limited resources.
+  - Since Fauna operates its cloud service in a way that always provides available capacity, priority has not served a purpose for Fauna Cloud.
+  date: 2019-12-01T00:00:00Z?date=December 2019&version=2.10.1
+- breaking: false
+  highlights:
+  - This function provided some confusion for users with SQL experience.
+  - It did not serve a very common use case and was challenging to use effectively.
+  date: 2019-11-01T00:00:00Z?date=November 2019&version=2.10.0
+- breaking: false
+  highlights:
+  - Classes were renamed to Collections.
+  - Use CreateCollection instead.
+  date: 2019-07-01T00:00:00Z?date=July 2019&version=2.7.0
+- breaking: false
+  highlights:
+  - Classes were renamed to Collections.
+  - Use Collection instead.
+  date: 2019-07-01T00:00:00Z?date=July 2019&version=2.7.0
+- breaking: false
+  highlights:
+  - Classes were renamed to Collections.
+  - Use Collections instead.
+  date: 2019-07-01T00:00:00Z?date=July 2019&version=2.7.0
+current_version: v4
+note: Entries are taken directly from the Fauna deprecations documentation page; dates are the deprecation begin dates.
+docs: https://docs.faunadb.org/fauna/v4/api/fql/deprecations/

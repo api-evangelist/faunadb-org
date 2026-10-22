@@ -1,0 +1,28 @@
+# Fauna documentation for LLMs
+
+> Fauna is a true serverless database that combines document flexibility with native relational capabilities, offering auto-scaling, multi-active replication, and HTTPS connectivity.
+
+## Documentation sets
+
+- [Full documentation](https://docs.faunadb.org/llms-full.txt): The complete documentation for Fauna, FQL, FSL, and the Fauna CLI.
+- [Abridged documentation](https://docs.faunadb.org/llms-small.txt): Abridged documentation for LLMs with smaller context windows.
+
+## Reference documentation
+
+- [FQL documentation](https://docs.faunadb.org/fql/llms.txt): Documentation for the Fauna Query Language (FQL) syntax and API.
+- [FSL documentation](https://docs.faunadb.org/fsl/llms.txt): Documentation for the Fauna Schema Language (FSL) syntax and API.
+- [Fauna CLI documentation](https://docs.faunadb.org/cli/llms.txt): Documentation for the Fauna CLI.
+
+## Client driver documentation
+
+- [JavaScript driver](https://docs.faunadb.org/clients/js/llms.txt): Documentation for the Fauna JavaScript driver.
+- [Python driver](https://docs.faunadb.org/clients/python/llms.txt): Documentation for the Fauna Python driver.
+- [Go driver](https://docs.faunadb.org/clients/go/llms.txt): Documentation for the Fauna Go driver.
+- [.NET/C# driver](https://docs.faunadb.org/clients/dotnet/llms.txt): Documentation for the Fauna .NET/C# driver.
+- [JVM driver](https://docs.faunadb.org/clients/jvm/llms.txt): Documentation for the Fauna JVM (Java) driver.
+
+## Notes
+
+- The full documentation includes all content from the official Fauna docs at docs.faunadb.org.
+- Reference documentation files only contain content relevant to the language or tool.
+- The content is automatically generated from the same source as the official documentation.

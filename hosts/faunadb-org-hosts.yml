@@ -1,0 +1,74 @@
+generated: '2026-10-22'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 5
+  own: 3
+  other_domain: 0
+  platform: 2
+  roles:
+  - api
+  - docs
+  - other
+  - source
+  - website
+hosts:
+- host: api.faunadb.org
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: faunadb.org
+  role: api
+  relation: own
+- host: docs.faunadb.org
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - APIReference
+  - GettingStarted
+  - Documentation
+  serves:
+  - docs
+  registrable_domain: faunadb.org
+  role: docs
+  relation: own
+- host: fauna.github.io
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: github.io
+  role: other
+  relation: platform
+- host: faunadb.org
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  serves:
+  - hosting
+  vendor: netlify
+  registrable_domain: faunadb.org
+  role: website
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform

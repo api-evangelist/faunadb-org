@@ -1,0 +1,24 @@
+generated: '2026-10-22'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.faunadb.org/fauna/current/learn/query/pagination/
+sources:
+- https://docs.faunadb.org/fauna/current/learn/query/pagination/
+- https://docs.faunadb.org/fauna/v4/build/fql/indexes/pagination/
+- https://docs.faunadb.org/fauna/current/get-started/quick-start/
+- https://docs.faunadb.org/fauna/current/get-started/quick-start/nodejs/
+idempotency:
+  coverage: none
+  evidence: The provided pages contain no mention of an idempotency header or key.
+pagination:
+  style: cursor‑based pagination using `after` and `before` cursors
+  params:
+  - size (optional, default 64, max 100,000)
+  - after (cursor to fetch next page)
+  - before (cursor to fetch previous page, can be null to fetch last page)
+  response_fields:
+  - data (array of result items)
+  - after (cursor for next page, omitted on last page)
+  - before (cursor for previous page, omitted on first page)
+  evidence: Pages describe default size, maximum size, and cursor usage.
+docs: https://docs.faunadb.org/fauna/current/learn/query/pagination/

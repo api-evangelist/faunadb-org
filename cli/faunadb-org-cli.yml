@@ -1,0 +1,49 @@
+generated: '2026-10-22'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.faunadb.org/cli/llms.txt
+sources:
+- https://docs.faunadb.org/cli/llms.txt
+- https://docs.faunadb.org/fauna/current/build/cli/v4/
+- https://docs.faunadb.org/fauna/current/build/cli/v4/commands/
+- https://docs.faunadb.org/fauna/current/build/cli/v4/commands/completion/
+install:
+- method: npm
+  command: npm install -g fauna-shell
+commands:
+- group: completion
+  commands:
+  - fauna completion
+- group: database
+  commands:
+  - fauna database create
+  - fauna database delete
+  - fauna database list
+- group: export
+  commands:
+  - fauna export create
+  - fauna export create s3
+  - fauna export get
+  - fauna export list
+- group: local
+  commands:
+  - fauna local
+- group: login
+  commands:
+  - fauna login
+- group: query
+  commands:
+  - fauna query
+- group: schema
+  commands:
+  - fauna schema abandon
+  - fauna schema commit
+  - fauna schema diff
+  - fauna schema pull
+  - fauna schema push
+  - fauna schema status
+- group: shell
+  commands:
+  - fauna shell
+binary: fauna
+docs: https://docs.faunadb.org/cli/llms.txt

@@ -1,25 +1,90 @@
 aid: faunadb-org
+
 name: Fauna
-description: 'Fauna is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by crv) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Fauna is a serverless cloud database platform that provides a globally distributed, transactional NoSQL database with built‑in security, authentication, and a powerful query language called FQL. It enables developers to build modern applications without managing infrastructure, offering features such as multi‑region replication, ACID transactions, and flexible data models. Fauna’s platform is designed for high scalability, low latency, and seamless integration with serverless functions and APIs, making it ideal for building real‑time, data‑intensive applications.'
+
 url: https://raw.githubusercontent.com/api-evangelist/faunadb-org/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Database
+- Serverless
+- NoSQL
+- Cloud
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- crv
+
 common:
+- type: CLI
+  url: cli/faunadb-org-cli.yml
+- type: ChangeLog
+  url: changelog/faunadb-org-changelog.yml
+- type: Conventions
+  url: conventions/faunadb-org-conventions.yml
+- type: Authentication
+  url: authentication/faunadb-org-authentication.yml
+- type: Deprecation
+  url: lifecycle/faunadb-org-lifecycle.yml
+- type: Lifecycle
+  url: lifecycle/faunadb-org-lifecycle.yml
+- type: Conformance
+  url: conformance/faunadb-org-conformance.yml
+- type: LLMsTxt
+  url: llms/faunadb-org-llms.txt
+- type: Hosts
+  url: hosts/faunadb-org-hosts.yml
+- type: Vendors
+  url: vendors/faunadb-org-vendors.yml
+- type: GitHubOrganization
+  url: https://github.com/fauna/
+- type: APIReference
+  url: https://docs.faunadb.org/fauna/current/reference/fql/
+- type: GettingStarted
+  url: https://docs.faunadb.org/fauna/current/get-started/quick-start
+- type: Documentation
+  url: https://docs.faunadb.org/
+- type: DomainSecurity
+  url: security/faunadb-org-domain-security.yml
 - type: Website
   url: https://faunadb.org/
+
+apis: []
+
+x-backed-by:
+- crv
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-22'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://faunadb.org/
+    status: 200
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 15
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

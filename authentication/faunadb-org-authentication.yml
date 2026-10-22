@@ -1,0 +1,17 @@
+generated: '2026-10-22'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.faunadb.org/fauna/current/learn/security/authentication/
+sources:
+- https://docs.faunadb.org/fauna/current/learn/security/authentication/
+- https://docs.faunadb.org/fauna/current/build/tutorials/auth/
+- https://docs.faunadb.org/fauna/v4/build/tools/dashboard/mfa/
+- https://docs.faunadb.org/fauna/current/learn/security/tokens/
+description: Authentication
+schemes:
+- type: http-bearer
+  name: Fauna secret
+  evidence: Secrets are passed to the Fauna HTTP API as bearer tokens.
+  location: header
+  header: Authorization
+docs: https://docs.faunadb.org/fauna/current/learn/security/authentication/

@@ -1,0 +1,20 @@
+generated: '2026-10-22'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.faunadb.org/fauna/current/learn/security/
+sources:
+- https://docs.faunadb.org/fauna/current/learn/security/
+- https://docs.faunadb.org/fauna/current/learn/security/authentication/
+- https://docs.faunadb.org/fauna/current/learn/security/access-providers/
+- https://docs.faunadb.org/fauna/current/learn/security/tokens/
+standards:
+- id: gdpr
+  conforms: true
+  evidence: Fauna is compliant with GDPR and SOC2 Type II.
+- id: soc2
+  conforms: true
+  evidence: Fauna is compliant with GDPR and SOC2 Type II.
+- id: hipaa
+  conforms: true
+  evidence: Fauna can be configured to meet HIPAA requirements.
+docs: https://docs.faunadb.org/fauna/current/learn/security/
